@@ -131,7 +131,7 @@ console.log("Text original: '" + text + "'");
 // TODO: a la cadena inicial, ofuscar el nom d'Omar i reemplaçar-lo per XXXX
 
 text =
-  "   Aquesta és una string que ha escrito l'Omar per fer exercicis de mètodes   ";
+  "   Aquesta és una string que ha escrit l'Omar per fer exercicis de mètodes   ";
 console.log("Frase completa: " + text);
 console.log(
   "Frase amb tot ofuscat menys el nom: " +
