@@ -76,12 +76,20 @@
 
 // TODO: crea una función que divida dos números enteros y te devuelva en un array el resultado y el resto (residuo)
 
+// function division(q, p) {
+//   return [parseInt(q/p), q%p]
+// }
+
+// a=27;
+// b=7;
+// console.log(`El quacioent de dividir ${a} entre ${b} és $division(a, b)[0] i el residu és ${division(a, b)[1]`});
+
 // TODO: crea una función que pida por prompt si quieres camiseta, pantalón o gorra, de qué color y de qué talla (S, M, L, XL) y te muestre por consola un resumen de tu pedido: "Has pedido una camiseta 👕 azul 🔵 talla XL"
 
-// function ferComanda() {
-//   let producte = prompt("Quin producte vols: samarreta, pantaló o gorra?");
-//   let color = prompt("De quin color?");
-//   let talla = prompt("Quina talla: S, M, L o XL?");
-// }
+function pedido() {
+  let producte = prompt("Quin producte vols: samarreta, pantaló o gorra?");
+  let color = prompt("De quin color?");
+  let talla = prompt("Quina talla: S, M, L o XL?");
+}
 
 // TODO: crea una función que esté al principio de todo del script y te permita decidir cuál de los cuatro ejercicios anteriores se ejecuta
