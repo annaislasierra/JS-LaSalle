@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="ca">
+  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apunts JS - curs Front End La Salle</title>
   </head>
+  
   <body>
+    <h1>Xuletari de JS</h1>
+    
     <h2>Preliminars</h2>
+    
     <h3>
       Forma correcta de treballar amb GitHub (jo com a propietària de projecte)
     </h3>
+    
     <h4>1. Crear el repo a GitHub</h4>
     <ol>
       <li>Botó verd <b>New</b>.</li>
@@ -18,6 +24,7 @@
       <li>No calen <b>.gitignore</b> ni <b>license</b>.</li>
       <li>Botó verd <b>Create repository</b>.</li>
     </ol>
+    
     <h4>2. Clonar el repositori</h4>
     <ol>
       <li>
@@ -29,46 +36,65 @@
         <b>Clone Git Repository</b>.
       </li>
       <li>
-        Al camp de text duperior central, enganxar l'URL del repo y
+        Al camp de text superior central, enganxar l'URL del repo y
         <b>Enter</b>.
       </li>
       <li>Indicar la carpeta local on es clonarà el repo.</li>
     </ol>
+    
     <p>
       Es pot usar l'arxiu <b>README.md</b> per guardar un petit índex del
       contingut, per exemple, usant el llenguatge de marques <b>MarkDown</b>:
     </p>
+    
     <ul>
       <li>## -> Per a títols (estil h1 o h2).</li>
-      <li>### -> Mena h3/h4.</li>
+      <li>### -> Mena d'h3/h4.</li>
       <li>Un guió amb un espai -> Crea llistes amb punts.
         <li>[Texte](adreça https) -> Crea enllaços a URL. Apareix el "Texte" en un altre color; clic i envia a la URL entre parèntesi.</li>
       </li>
     </ul>
+    
     <p>
       Després de fer canvis en local, icona <b>Source Control</b> de VSC, afegir
       un missatge descriptiu i <b>Commit</b>; sincronitzar i dir que sí (per
       pujar al remot els canvis).
     </p>
+    
     <p>
       <b>SEMPRE afegir un missatge al commit; si no, es penja (al menys el
         meu).</b>
     </p>
+
+    <h3>
+      Veure una web guardada a GitHub
+    </h3>
+
+    <ol>
+      <li>Dins de la pàgina del repo, anar a la roda dentada (<b>Settings</b>) i, al menú lateral,clicar a <b>Pages</b>.</li>
+      <li>Apartat <b>Build and deployment</b>, Branch <b>Main</b> i botó <b>Save</b>; d'aquesta manera, el nostre respositori es guarda a les GitHub Pages (només llegeix «Vanillas», o sigui, HTML, CSS i JS).</li>
+      <li>Adreça: nomusuariGitHub.github.io/nomrepositori/</li>
+      <p>Si només posem el nom del repo, el que es mostra és el README. Si posem a continuació el nom d'un arxiu html, veiem al navegador aquesta pàgina.</p>
+    </ol>
+    
     <h3>Dreceres de teclat molones</h3>
+    
     <ul>
       <li><b>! Tab (o Enter)</b>: en un arxiu en blanc, genera l'estructura bàsica d'una pàgina html. Compte! La funcionalitat Emmet ha d'estar habilitada (ho està per defecte) y l'arxiu <b>ha de tenir l'extensió html</b>.</li>
       <li><b>log + 1.ª opció:</b> escriu automàticament <b>console.log()</b>.</li>
       <li><b>F12 o Majúsc Ctrol I:</b> obrir la consola del navegador.</li>
-      <li><b>Alt Majúsc Fletxa avall:</b>amb una sel·lecció, duplica el que està sel·leccionat.</li>
-      <li><b>F1 - Wrap (o Encapsular) - etiqueta:</b> amb una part de codi sel·leccionada, posa l'etiqueta indicada a l'inici i al final de la sel·lecció.</li>
-      <li><b>Alt i Fletxa amunt o avall:</b> puja o baixa la línia dins la qual es troba el cursor.</li>
+      <li><b>Alt + Majúsc + Fletxa avall:</b>amb una sel·lecció, duplica el que està sel·leccionat.</li>
+      <li><b>Alt + clics a diferents llocs:</b> duplica els cursors.</li>
+      <li><b>F1 - Wrap (o Encapsular; Wrap with Abbreviation) - etiqueta:</b> amb una part de codi sel·leccionada, posa l'etiqueta indicada a l'inici i al final de la sel·lecció.</li>
+      <li><b>Alt + fletxa amunt o avall:</b> puja o baixa la línia dins la qual es troba el cursor.</li>
+      <li><b>Ctrl + D + selecció:</b> sel·lecciona el següent element idèntic al que ja està sel·leccionat. S'obté un multicursor que permet l'edició simuntània.</li>
     </ul>
+    
     <h3>Extensions útils</h3>
     <ul>
       <li><b>Open in Default Browser</b>: apareix aquesta opció en fer clic dret sobre una pàgina. Si es fan canvis, cal recarregar-la. Una altra opció es Live Server.</li>
       <li><b>Live Server</b>: Inicia un servidor en local pitjant la iconeta <b>Go Live</b> a la línia inferior dreta de VSC. Actualitza canvis automàticament.</li>
     </ul>
-    <h3>Ubicacions de les referències a JS en arxius html</h3>
 
     <h3>Curiositats teòriques</h3>
     <p><b>Llenguatges compilats:</b> el codi s'empaqueta i es tracta en conjunt.<br>
@@ -76,11 +102,27 @@
     <p>L'HTML es carrega línia a línia.</p>
 
     <h2>JavaScript</h2>
-    <h3>Dónde ubicar los scripts</h3>
-    <b>Etiquetas script siempre dentro del html. Los hola mundo 1 y 4 no son correctos. Deben ir en el head (si queremos que se ejecuten nada más cargar la página) en el body.</b>
-    <p><b>Fòrmula per cruidar un arxiu de JS extern: &lt;script src="script1.js"&gt;&lt;/script&gt;
-</b></p>
-<p><a href="Exercicis/hello world.html">Exercici Hello World</a>: exercici per veure on poden afegir-se els scripts en una web.</p>
+    
+    <h3>On ubicar els scripts</h3>
+    <p>No hi ha codi intel·ligent fora del html. Per tant, les referències al arxius js o els scripts en aquest lleguatge SEMPRE han de ser entre les etiquetes html: al <b>head</b> -si volem que s'executin tan bon punt es carrega la pàgina- o al <b>body</b>.</p>
+    <p><b>Fòrmula per cridar un arxiu de JS extern: &lt;script src="script1.js"&gt;&lt;/script&gt;
+    </b></p>
+
+<h3>Exercici 1: Hello world</h3>
+<p><a href="./Exercicis/hello world.html">Exercici Hello World</a>: exercici per veure on poden afegir-se els scripts en una web.</p>
+<p>Observació: l'atribut <b>defer</b> serveix per executar el scrip de manera diferida. Útil sobretot per fer depuració de codi o per recopilació de dades: &lt;script src="script1.js" defer&gt;&lt;/script&gt;</p>
+
+
+<h3>Variables</h3>
+<p><i>Només prenc nota dels conceptes que em són nous.</i></p>
+
+<p>Les variables no són caixes, sinó fletxes que apunten a un contingut.</p>
+<p>Una string amb backsticks es coneix com a <b>template literal</b>. P. ex:</p>
+<p>let userTitle = `professor`</p>
+<p>Compte! Un + entre dos strings és un operador de concatenació; entre dos numbers és l'operador suma. Si es barregen strings i numbers: concatena.</p>
+<p>Les constants s'acostumen a escriure amb majúscules. Pex.: const ESPACIO = " ".</p>
+<p>En una string, contrabarra n és un salt de línia: \n</p>
+
 
 <h3>Mètodes d'objectes</h3>
     <p>Els <b>mètodes</b> són funcions associades a un element. P. ex.: <b>toString</b> és un mètode dels números: <b>log</b>, <b>table</b> són un mètodes de l'objecte <b>console</b><br>.
