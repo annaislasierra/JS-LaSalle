@@ -1,6 +1,6 @@
 console.log(
   "%cMètodes arrays i strings",
-  "font-weight: bold; color: red; font-family: Arial; font-size: 2 em"
+  "font-weight: bold; color: red; font-family: Arial; font-size: 2em"
 );
 
 //-----------------------EXPLICACIONS "PRÒPIES"-----------------------
@@ -30,7 +30,7 @@ console.log(str3.replace("mundo", "amigo")); // "Hola amigo"
 let str4 = "Hola mundo mundo";
 console.log(str4.replaceAll("mundo", "amigo")); // "Hola amigo amigo"
 
-// split()
+// --->split()
 // Divide una cadena en un array de subcadenas usando un separador. Es un método de string.
 let str5 = "Hola mundo";
 console.log(str5.split(" ")); // ["Hola", "mundo"]
