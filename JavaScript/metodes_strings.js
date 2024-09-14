@@ -94,7 +94,7 @@ console.log(str12.endsWith("mundo")); // true
 text =
   "   Aquesta és una string que ha escrito l'Omar per fer exercicis de mètodes   ";
 
-// TODO: provar mètodes trim(), pad...(), replce(), replaceAll(), split(), to...Case() i slice()
+// TODO: provar mètodes trim(), pad...(), replace(), replaceAll(), split(), to...Case() i slice()
 
 console.log(text.lengh);
 

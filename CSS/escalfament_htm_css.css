@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #2c3e50;
+}
+
+.logo i {
+  font-size: 2em;
+  color: #f5a623;
+}
+
+.titulo h1 {
+  color: #f5a623;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.menu nav {
+  position: relative;
+}
+
+.menu-button {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.menu-options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: white;
+  /* border: 1px solid #ccc; */
+  display: none;
+}
+
+.layout {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  padding: 20px;
+}
+
+aside.columna-lateral {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.columna-lateral ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Enlaces en aside */
+.columna-lateral ul li a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+.columna-lateral ul li a:hover {
+  color: #f5a623;
+}
+
+/* Meses */
+.columna-lateral > ul > li {
+  color: #2c3e50;
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Artículos en aside */
+.columna-lateral ul ul li {
+  color: #020400;
+  font-size: 0.8em;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+article {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+article h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #2c3e50;
+}
+
+article p {
+  margin: 0;
+  font-size: 1em;
+  color: #666;
+}
+
+footer {
+  text-align: center;
+  color: azure;
+  padding: 10px;
+  background-color: #f5a623;
+}

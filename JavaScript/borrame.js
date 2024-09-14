@@ -1,40 +1,28 @@
-// Ejercicio: intercambiar los valores de manera que salga por consola 2,1
+// Función que devuelve una promesa (simula una operación asíncrona)
+function obtenerDatos() {
+  // Se devuelve una nueva promesa
+  return new Promise((resolve, reject) => {
+    // Simulamos una operación asíncrona con setTimeout
+    setTimeout(() => {
+      const exito = true; // Cambia a false para simular un error
+      if (exito) {
+        // Si exito es true, la promesa se cumple con "resolve"
+        resolve("Datos obtenidos con éxito!");
+      } else {
+        // Si exito es false, la promesa es rechazada con "reject"
+        reject("Error al obtener los datos.");
+      }
+    }, 1000); // La operación tarda 1 segundo
+  });
+}
 
-a = 1;
-b = 2;
-
-console.log(a, b); //1, 2
-
-c = a;
-a = b;
-b = c;
-
-console.log(a, b); // 2, 1
-
-[a, b] = [b, a]; // 1, 2
-
-const PI = "3.1415"; // JS és prou intel·ligent com per convertir-ho a number.
-let radi = 4;
-
-console.log(`L'àrea del cercle és ${PI * radi ** 2}`);
-
-let cercle = {
-  radi: 4,
-  area: PI * radi ** 2,
-};
-
-console.log(cercle);
-
-parse = {
-  data0: PI,
-  data1: parseFloat(PI),
-  data2: parseInt(PI),
-  data3: radi,
-  data4: radi.toString(),
-};
-
-console.log(parse.data0, typeof data0); // 3.1415 string
-console.log(parse.data1, typeof data1); // 3.1415 'number'
-console.log(parse.data2, typeof data2); // 3 'number'
-console.log(parse.data3, typeof data3); // 4.5 'number'
-console.log(parse.data4, typeof data4); // 4.5 string
+// Llamamos a la función que devuelve una promesa
+obtenerDatos()
+  // Si la promesa se resuelve con éxito, se ejecuta este "then"
+  .then((resultado) => {
+    console.log(resultado); // Imprime el resultado exitoso
+  })
+  // Si la promesa es rechazada, se ejecuta este "catch"
+  .catch((error) => {
+    console.error(error); // Imprime el error en la consola
+  });
