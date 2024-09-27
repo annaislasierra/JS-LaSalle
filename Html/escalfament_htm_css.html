@@ -10,9 +10,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
   </head>
+  <header>
+    <div class="header-container">
+      <div class="language-links">
+        <a href="#" onclick="showContent('cat')">Cat</a>
+        <a href="#" onclick="showContent('esp')">Esp</a>
+        <a href="#" onclick="showContent('ban')">Ban</a>
+      </div>
 
-  <body>
-    <header>
       <div class="logo">
         <i class="fas fa-cloud"></i>
         <i class="fas fa-sun"></i>
@@ -24,16 +29,12 @@
       <div class="menu">
         <nav>
           <button id="menuButton" class="menu-button">🍔</button>
-          <ul id="menuOptions" class="menu-options">
-            <li>Opción1</li>
-            <li>Opción2</li>
-            <li>Opción3</li>
-            <li>Opción4</li>
-          </ul>
         </nav>
       </div>
-    </header>
+    </div>
+  </header>
 
+  <body>
     <div class="layout">
       <aside class="columna-lateral">
         <ul>
@@ -62,63 +63,248 @@
       </aside>
 
       <main>
-        <article id="articulo1">
-          <h2>Título del Artículo 1</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
-            dui euismod, gravida erat et, pharetra velit. Fusce et nulla nec dui
-            gravida volutpat. <br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
-            dui euismod, gravida erat et, pharetra velit. Fusce et nulla nec dui
-            gravida volutpat, gravida erat et, pharetra velit. Fusce et nulla nec dui
-            gravida volutpat.
-          </p>
-        </article>
-        <article id="articulo2">
-          <h2>Título del Artículo 2</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
-            dui euismod, gravida erat et, pharetra velit. Fusce et nulla nec dui
-            gravida volutpat.
-          </p>
-        </article>
-        <article id="articulo3">
-          <h2>Título del Artículo 3</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
-            dui euismod, gravida erat et, pharetra velit. Fusce et nulla nec dui
-            gravida volutpat.
-          </p>
-        </article>
-        <article id="articulo4"></article>
-          <h2>Título del Artículo 4</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
-            dui euismod, gravida erat et, pharetra velit. Fusce et nulla nec dui
-            gravida volutpat.
-          </p>
-        </article>
-        <article id="articulo5"></article>
-          <h2>Título del Artículo 5</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
-            dui euismod, gravida erat et, pharetra velit. Fusce et nulla nec dui
-            gravida volutpat.
-          </p>
-        </article>
-        <article id="articulo6"></article>
-          <h2>Título del Artículo 6</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
-            dui euismod, gravida erat et, pharetra velit. Fusce et nulla nec dui
-            gravida volutpat.
-          </p>
-        </article>
+        <!-- CONTENIDO SPANISH -->
+        <div id="content-es">
+          <article id="articulo1">
+            <h2>Título del Artículo 1</h2>
+            <img src="imagen1.jpg" alt="Imagen 1" class="articulo-img" />
+            <p>
+              La literatura ha sido desde siempre una ventana al alma humana. A
+              través de las palabras, los escritores nos permiten explorar
+              emociones, ideas y mundos nuevos. Los grandes autores de la
+              historia han reflejado en sus obras las complejidades del ser
+              humano, abordando temas universales como el amor, la muerte y el
+              destino.
+            </p>
+            <p>
+              En el Renacimiento, la literatura floreció como una expresión
+              artística plena de significado, trayendo consigo cambios
+              revolucionarios en la forma en que percibimos la vida. Autores
+              como Shakespeare y Cervantes transformaron el paisaje literario
+              con personajes profundos y narrativas envolventes.
+            </p>
+            <p>
+              Hoy en día, la literatura sigue siendo un faro que nos guía en un
+              mundo cada vez más caótico, recordándonos la importancia de la
+              reflexión y el entendimiento.
+            </p>
+          </article>
+          <article id="articulo2">
+            <h2>Título del Artículo 2</h2>
+            <img src="imagen2.jpg" alt="Imagen 2" class="articulo-img" />
+            <p>
+              Las corrientes literarias reflejan los cambios culturales y
+              sociales de cada época. Desde el Romanticismo, que celebra las
+              emociones y la naturaleza, hasta el Realismo, que ofrece una
+              mirada cruda a la realidad cotidiana. Cada movimiento ha dejado
+              una huella imborrable en la evolución de la escritura.
+            </p>
+            <p>
+              Los autores románticos, como Lord Byron y Gustavo Adolfo Bécquer,
+              se destacaron por sus expresiones apasionadas y su búsqueda de lo
+              sublime, mientras que los realistas como Balzac y Galdós se
+              enfocaron en los detalles más minuciosos de la vida.
+            </p>
+          </article>
+          <article id="articulo3">
+            <h2>Título del Artículo 3</h2>
+            <img src="imagen3.jpg" alt="Imagen 3" class="articulo-img" />
+            <p>
+              La narrativa contemporánea nos ofrece un mosaico de estilos y
+              temas, donde conviven el realismo, la ciencia ficción y la
+              autoficción. Autores modernos exploran nuevas formas de contar
+              historias, aprovechando las tecnologías actuales y los cambios en
+              la percepción del tiempo y la memoria.
+            </p>
+            <p>
+              Las novelas gráficas, por ejemplo, han ganado gran popularidad,
+              fusionando la imagen y el texto para crear experiencias visuales y
+              literarias únicas. El auge de la literatura digital ha permitido a
+              los autores compartir sus trabajos de manera instantánea con
+              audiencias globales.
+            </p>
+          </article>
+          <article id="articulo4">
+            <h2>Título del Artículo 4</h2>
+            <img src="imagen4.jpg" alt="Imagen 4" class="articulo-img" />
+            <p>
+              La poesía es una de las formas más antiguas de la literatura. A
+              través de ella, los poetas han dado forma a sus pensamientos más
+              profundos, utilizando el verso para transmitir emociones
+              complejas. Desde los antiguos poemas épicos hasta la poesía
+              moderna, el arte de las palabras en verso sigue cautivando a
+              lectores de todas las edades.
+            </p>
+            <p>
+              Autores como Emily Dickinson y Pablo Neruda han dejado un legado
+              imborrable en la poesía, explorando temas como la naturaleza, el
+              amor y la soledad. Sus versos resuenan a lo largo del tiempo,
+              mostrando la belleza que puede encontrarse en las palabras.
+            </p>
+          </article>
+          <article id="articulo5">
+            <h2>Título del Artículo 5</h2>
+            <img src="imagen5.jpg" alt="Imagen 5" class="articulo-img" />
+            <p>
+              El cuento es una forma breve pero poderosa de narrar historias. A
+              través de pocas palabras, los cuentistas son capaces de capturar
+              momentos fugaces y emociones intensas. Autores como Edgar Allan
+              Poe y Jorge Luis Borges son recordados por sus cuentos llenos de
+              misterio y reflexión.
+            </p>
+            <p>
+              Los cuentos permiten al lector sumergirse rápidamente en un
+              universo ficticio, experimentar la tensión de un conflicto y
+              disfrutar de un desenlace impactante en cuestión de minutos.
+            </p>
+          </article>
+          <article id="articulo6">
+            <h2>Título del Artículo 6</h2>
+            <img src="imagen6.jpg" alt="Imagen 6" class="articulo-img" />
+            <p>
+              El ensayo literario es una forma en la que el escritor puede
+              expresar sus opiniones y reflexiones sobre temas específicos.
+              Desde la filosofía hasta la política, el ensayo ha sido una
+              herramienta valiosa para el pensamiento crítico.
+            </p>
+            <p>
+              Ensayistas como Michel de Montaigne y Virginia Woolf han influido
+              enormemente en la forma en que entendemos el mundo, aportando sus
+              perspectivas únicas a los debates intelectuales de su tiempo.
+            </p>
+          </article>
+        </div>
+        <!-- CONTENIDO CAT -->
+        <div id="content-cat" style="display: none">
+          <article id="articulo1">
+            <h2>Títol de l'article 1</h2>
+            <img src="imagen1.jpg" alt="Imagen 1" class="articulo-img" />
+            <p>
+              La literatura ha estat sempre una finestra a l'ànima humana. A
+              través de les paraules, els escriptors ens permeten explorar
+              emocions, idees i mons nous. Els grans autors de la història han
+              reflectit en les seves obres les complexitats de l'ésser humà,
+              abordant temes universals com l'amor, la mort i el destí.
+            </p>
+            <p>
+              En el Renaixement, la literatura va florir com una expressió
+              artística plena de significat, portant amb ella canvis
+              revolucionaris en la forma en què percebem la vida. Autors com
+              Shakespeare i Cervantes van transformar el paisatge literari amb
+              personatges profunds i narratives envoltants.
+            </p>
+            <p>
+              Avui dia, la literatura continua sent un far que ens guia en un
+              món cada cop més caòtic, recordant-nos la importància de la
+              reflexió i l'enteniment.
+            </p>
+          </article>
+          <article id="articulo2">
+            <h2>Títol de l'article 2</h2>
+            <img src="imagen2.jpg" alt="Imagen 2" class="articulo-img" />
+            <p>
+              Las corrientes literarias reflejan los cambios culturales y
+              sociales de cada época. Desde el Romanticismo, que celebra las
+              emociones y la naturaleza, hasta el Realismo, que ofrece una
+              mirada cruda a la realidad cotidiana. Cada movimiento ha dejado
+              una huella imborrable en la evolución de la escritura.
+            </p>
+            <p>
+              Los autores románticos, como Lord Byron y Gustavo Adolfo Bécquer,
+              se destacaron por sus expresiones apasionadas y su búsqueda de lo
+              sublime, mientras que los realistas como Balzac y Galdós se
+              enfocaron en los detalles más minuciosos de la vida.
+            </p>
+          </article>
+          <article id="articulo3">
+            <h2>Títol de l'article 3</h2>
+            <img src="imagen3.jpg" alt="Imagen 3" class="articulo-img" />
+            <p>
+              La narrativa contemporánea nos ofrece un mosaico de estilos y
+              temas, donde conviven el realismo, la ciencia ficción y la
+              autoficción. Autores modernos exploran nuevas formas de contar
+              historias, aprovechando las tecnologías actuales y los cambios en
+              la percepción del tiempo y la memoria.
+            </p>
+            <p>
+              Las novelas gráficas, por ejemplo, han ganado gran popularidad,
+              fusionando la imagen y el texto para crear experiencias visuales y
+              literarias únicas. El auge de la literatura digital ha permitido a
+              los autores compartir sus trabajos de manera instantánea con
+              audiencias globales.
+            </p>
+          </article>
+          <article id="articulo4">
+            <h2>Títol de l'article 4</h2>
+            <img src="imagen4.jpg" alt="Imagen 4" class="articulo-img" />
+            <p>
+              La poesía es una de las formas más antiguas de la literatura. A
+              través de ella, los poetas han dado forma a sus pensamientos más
+              profundos, utilizando el verso para transmitir emociones
+              complejas. Desde los antiguos poemas épicos hasta la poesía
+              moderna, el arte de las palabras en verso sigue cautivando a
+              lectores de todas las edades.
+            </p>
+            <p>
+              Autores como Emily Dickinson y Pablo Neruda han dejado un legado
+              imborrable en la poesía, explorando temas como la naturaleza, el
+              amor y la soledad. Sus versos resuenan a lo largo del tiempo,
+              mostrando la belleza que puede encontrarse en las palabras.
+            </p>
+          </article>
+          <article id="articulo5">
+            <h2>Títol de l'article 5</h2>
+            <img src="imagen5.jpg" alt="Imagen 5" class="articulo-img" />
+            <p>
+              El cuento es una forma breve pero poderosa de narrar historias. A
+              través de pocas palabras, los cuentistas son capaces de capturar
+              momentos fugaces y emociones intensas. Autores como Edgar Allan
+              Poe y Jorge Luis Borges son recordados por sus cuentos llenos de
+              misterio y reflexión.
+            </p>
+            <p>
+              Los cuentos permiten al lector sumergirse rápidamente en un
+              universo ficticio, experimentar la tensión de un conflicto y
+              disfrutar de un desenlace impactante en cuestión de minutos.
+            </p>
+          </article>
+          <article id="articulo6">
+            <h2>Títol de l'article 6</h2>
+            <img src="imagen6.jpg" alt="Imagen 6" class="articulo-img" />
+            <p>
+              El ensayo literario es una forma en la que el escritor puede
+              expresar sus opiniones y reflexiones sobre temas específicos.
+              Desde la filosofía hasta la política, el ensayo ha sido una
+              herramienta valiosa para el pensamiento crítico.
+            </p>
+            <p>
+              Ensayistas como Michel de Montaigne y Virginia Woolf han influido
+              enormemente en la forma en que entendemos el mundo, aportando sus
+              perspectivas únicas a los debates intelectuales de su tiempo.
+            </p>
+          </article>
+        </div>
       </main>
     </div>
 
     <footer>
       <p>&copy; 2024 Página posvacacional</p>
     </footer>
+    <div class="icons">
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <script>
+      function showContent(language) {
+        if (language === "cat") {
+          document.getElementById("content-cat").style.display = "block";
+          document.getElementById("content-es").style.display = "none";
+        } else {
+          document.getElementById("content-cat").style.display = "none";
+          document.getElementById("content-es").style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
